@@ -30,4 +30,3 @@ for i in val:
 for i in test:
     shutil.copy('{}/{}.{}'.format(imgpath, i[:-4], postfix), '../../data/MAR20/images/test/{}.{}'.format(i[:-4], postfix))
     shutil.copy('{}/{}'.format(txtpath, i), '../../data/MAR20/labels/test/{}'.format(i))
-:
