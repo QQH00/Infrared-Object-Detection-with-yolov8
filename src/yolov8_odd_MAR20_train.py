@@ -9,4 +9,4 @@ model = YOLO('yolov8n-obb.pt')  # load a pretrained model (recommended for train
 model = YOLO('yolov8n-obb.yaml').load('yolov8n.pt')  # build from YAML and transfer weights
 
 # Train the model
-results = model.train(data='/home/huangqinlong/Workspace/ultralytics/data/MAR20/MAR20.yaml', device='0,1', task='detect', mode='train', epochs=500, imgsz=800, batch=-1)
+results = model.train(data='../data/MAR20/MAR20.yaml', device='0,1', task='detect', mode='train', epochs=500, imgsz=800, batch=-1)
