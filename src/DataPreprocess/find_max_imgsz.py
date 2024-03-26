@@ -2,7 +2,7 @@ import os
 import xml.etree.ElementTree as ET
 
 # 定义输入路径
-input_dir = "../../data/MAR20/Annotations/Oriented Bounding Boxes"
+input_dir = "data/MAR20/Annotations/Oriented Bounding Boxes"
 
 # 初始化最大宽度和高度
 max_width = 0

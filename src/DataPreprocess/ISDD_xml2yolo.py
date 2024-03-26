@@ -27,7 +27,7 @@ def convert_coordinates(size, box):
 
 
 def convert_xml2yolo(lut):
-    for fname in glob.glob("../../data/ISDD/Annotations/*.xml"):
+    for fname in glob.glob("data/ISDD/Annotations/*.xml"):
 
         xmldoc = minidom.parse(fname)
 
