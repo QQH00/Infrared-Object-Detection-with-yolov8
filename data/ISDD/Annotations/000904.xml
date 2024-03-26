@@ -1,0 +1,33 @@
+<annotation>
+  <folder>DATA</folder>
+  <filename>000904.png</filename>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>500</width>
+    <height>500</height>
+    <depth>1</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>ship</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>409</xmin>
+      <ymin>209</ymin>
+      <xmax>449</xmax>
+      <ymax>222</ymax>
+      <x1>409</x1>
+      <y1>209</y1>
+      <x2>409</x2>
+      <y2>222</y2>
+      <x3>449</x3>
+      <y3>222</y3>
+      <x4>449</x4>
+      <y4>209</y4>
+    </bndbox>
+  </object>
+</annotation>

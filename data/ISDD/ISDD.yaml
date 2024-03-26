@@ -1,0 +1,9 @@
+train: /home/huangqinlong/Workspace/ultralytics/data/images/train
+val: /home/huangqinlong/Workspace/ultralytics/data/images/val
+test: /home/huangqinlong/Workspace/ultralytics/data/images/test
+
+# number of classes
+nc: 1
+
+# class names
+names: ['ship']
