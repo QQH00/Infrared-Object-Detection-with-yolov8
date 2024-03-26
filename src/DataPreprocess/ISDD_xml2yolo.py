@@ -27,7 +27,7 @@ def convert_coordinates(size, box):
 
 
 def convert_xml2yolo(lut):
-    for fname in glob.glob("/home/huangqinlong/Workspace/ultralytics/data/MAR20/Annotations/Oriented Bounding Boxes/*.xml"):
+    for fname in glob.glob("../../data/ISDD/Annotations/*.xml"):
 
         xmldoc = minidom.parse(fname)
 
@@ -42,7 +42,7 @@ def convert_xml2yolo(lut):
 
             for item in itemlist:
                 # get class label
-                classid = (item.getElementsByTagName('name')[0]).firstChild.data
+                # classid = (item.getElementsByTagName('name')[0]).firstChild.data
                 # if classid in lut:
                 #     label_str = str(classid)
                 # else:
@@ -58,6 +58,7 @@ def convert_xml2yolo(lut):
                 bb = convert_coordinates((width, height), b)
                 # print(bb)
 
+                # ISDD只有一个类别ship，所以直接写0了
                 f.write('0' + " " + " ".join([("%.6f" % a) for a in bb]) + '\n')
 
         print("wrote %s" % fname_out)

@@ -2,7 +2,7 @@ import os
 import xml.etree.ElementTree as ET
 
 # 定义输入路径
-input_dir = '/home/huangqinlong/Workspace/ultralytics/data/MAR20/Annotations/Oriented Bounding Boxes'
+input_dir = "../../data/MAR20/Annotations/Oriented Bounding Boxes"
 
 # 初始化最大宽度和高度
 max_width = 0
@@ -20,7 +20,7 @@ for xml_file in os.listdir(input_dir):
 
         # 获取图像尺寸
         size = root.find('size')
-        width = int(size.find('').text)
+        width = int(size.find('width').text)
         height = int(size.find('height').text)
 
         # 更新最大宽度和高度

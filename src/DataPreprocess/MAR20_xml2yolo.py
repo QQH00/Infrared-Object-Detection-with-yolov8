@@ -3,8 +3,8 @@ import glob
 import xml.etree.ElementTree as ET
 
 # 设置数据集路径
-annotations_path = '/home/huangqinlong/Workspace/ultralytics/data/MAR20/Annotations/Oriented Bounding Boxes/'
-output_path = '/home/huangqinlong/Workspace/ultralytics/data/MAR20/labels/'
+annotations_path = '../../data/MAR20/Annotations/Oriented Bounding Boxes/'
+output_path = '../../data/MAR20/Annotations/Oriented Bounding Boxes TXT/'
 
 # 确保输出路径存在
 os.makedirs(output_path, exist_ok=True)
